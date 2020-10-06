@@ -1,0 +1,36 @@
+.block {
+  max-width: 710px;
+  background: #F3F3F3;
+  margin-right: 20px;
+  
+  
+  &:last-child {
+    margin-right: 0px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 159px;
+      height: 142px;
+      background-image: url('../../../../assets//images/ill_bird.png');
+      z-index: 100;
+      top: -126px;
+      right: 150px;
+    } 
+  }
+}
+
+
+.block_inner_wrapper {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 142px;
+  margin-right: 17px;
+}
+
+
+.block_inner_wrapper_right {
+  margin-left: 26px;
+  margin-right: 140px;
+}
