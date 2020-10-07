@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './HowToBlockLayout.module.scss'
+import classes from './BlockLayout.module.scss'
 
-export default function HowToBlockLayout(props) {
+export default function BlockLayout(props) {
     const cls = [classes.block_inner_wrapper];
 
     if (props.rightBlock) {

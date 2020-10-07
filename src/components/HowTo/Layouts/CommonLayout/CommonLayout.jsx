@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './howToLayout.module.scss'
+import classes from './CommonLayout.module.scss'
 
-export default function HowToCommonLayout(props) {
+export default function CommonLayout(props) {
     return (
         <div className={classes.content_wrapper}>
             {props.children}
