@@ -1,0 +1,50 @@
+.wrapper {
+  position: relative;
+}
+
+.bird {
+  position: absolute;
+  background-image: url('../../assets/images/ill_bird__footer.png');
+  width: 439px;
+  height: 303px;
+  top: -95px;
+  background-repeat: no-repeat;
+}
+
+.button {
+  display: block;
+  width: 463px;
+  height: 50px;
+  margin: 0;
+  margin: 0 auto;
+  margin-top: 46px;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background-color: #fff;
+  margin-bottom: 125px;
+}
+
+.activated {
+  border: 3px solid #FFEF5D;
+  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #FFEF5D;
+    color: black;
+    border: 3px solid #FFEF5D;
+  }
+}
+
+.deactivated {
+  border: 3px solid #C4C4C4;
+  cursor: initial;
+  outline: none;
+}

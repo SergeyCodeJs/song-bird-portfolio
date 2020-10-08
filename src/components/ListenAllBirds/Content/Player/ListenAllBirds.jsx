@@ -1,7 +1,7 @@
 import React from 'react'
-import BirdsList from './BirdsList/BirdsList'
+import BirdsList from '../../../BirdsList/BirdsList'
 import BirdsDescription from './BirdsDescription/BirdsDescription'
-import MusicPlayer from './MusicPlayer/MusicPlayer'
+import MusicPlayer from '../../../MusicPlayer/MusicPlayer'
 import BirdsImage from './BirdsImage/BirdsImage'
 
 import classes from './ListenAllBirds.module.scss'
@@ -13,7 +13,7 @@ export default function ListenAllBirds() {
             <BirdsList/>
             <div className={classes.description_wrapper}>
                 <BirdsDescription/>
-                <MusicPlayer/>
+                <MusicPlayer src="" autoPlay={false} loop={false} autoPlayAfterSrcChange={true}/>
             </div>
             <BirdsImage/>
         </div>

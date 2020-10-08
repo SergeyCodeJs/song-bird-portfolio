@@ -1,0 +1,35 @@
+
+.wrapper {
+    max-width: 549px;
+    position: relative;
+
+    h3 {
+        font-family: 'SF UI Text';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 9px;
+    }
+
+    p {
+        font-family: 'SF UI Text';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 62px;
+    }
+}
+
+.bg_gray {
+    width: 102%;
+    height: 92px;
+    background-color: #F3F3F3;
+    position: absolute;
+    top: 106px;
+    left:-2px;
+    opacity: 1;
+}
