@@ -11,7 +11,10 @@
     "react-h5-audio-player": "^3.4.1",
     "react-redux": "^7.2.1",
     "react-scripts": "3.4.3",
-    "redux": "^4.0.5"
+    "react-transition-group": "^4.4.1",
+    "reduce-reducers": "^1.0.4",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

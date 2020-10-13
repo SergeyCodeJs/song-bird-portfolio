@@ -1,0 +1,15 @@
+.arrow_top {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 5.56px;
+  background-image: url('../../../../assets/images/arrowTop.png');
+  right: -30px;
+  top: 20px;
+  transform: rotate(180deg);
+}
+
+.rotate {
+  transform: rotate(360deg);
+}

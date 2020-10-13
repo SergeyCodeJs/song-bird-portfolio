@@ -1,30 +1,39 @@
 import React from 'react'
+import Arrow from './ButtonArrow/ButtonArrow'
+import {connect} from 'react-redux'
+import {openListenAllModal} from '../../../redux/actions/listenAllActions/actions'
 import classes from './ShowAllButton.module.scss'
 
-export default function ShowAllButton({isPlayerStarted}) {
-  let cls = classes.button
+function ShowAllButton({isGameStarted, isInterfaceOpen, openListenAllModal}) {
+    let cls = classes.button;
+    let buttonText = !isInterfaceOpen
+        ? 'Послушать всех птиц'
+        : 'Закрыть плеер';
 
-
-  if (isPlayerStarted) {
-    cls = classes.button_deactivated;
-  }
+    if (isGameStarted) {
+        buttonText = 'Игра началась, а подсматривать против правил!';
+        cls = classes.button_deactivated;
+    }
 
     return (
-        <div className={cls}>
-            <div className={classes.button_text_wrapper}>
-                <h2>Послушать всех птиц</h2>
-                <Arrow showAll={true}/>
+        <div className={cls} onClick={!isGameStarted? openListenAllModal : null}>
+            <div style={!isGameStarted ? {} : {width: "100%"}} className={classes.button_text_wrapper}>
+                <h2>{buttonText}</h2>
+                {!isGameStarted ? <Arrow isInterfaceOpen={isInterfaceOpen}/> : null}
             </div>
         </div>
     )
 }
 
-function Arrow({showAll}) {
-  let cls = [classes.arrow_top];
-
-  if(showAll) {
-    cls.push(classes.rotate)
-  }
-
-  return <div className={cls.join(' ')} />
+function mapStateToProps({game}) {
+    const {listenAll, gameLogic} = game;
+    const {isInterfaceOpen} = listenAll;
+    const {isGameStarted} = gameLogic;
+    return {isGameStarted, isInterfaceOpen}
 }
+
+const mapDispatchToProps = {
+    openListenAllModal
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ShowAllButton)

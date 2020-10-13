@@ -1,0 +1,14 @@
+.birds-list-container {
+  margin-bottom: 33px;
+  min-width: 132px;
+  transition: all .3s ease-in; 
+}
+
+.birds-list-opacity-appear {
+  opacity: 0;
+}
+
+.birds-list-opacity-appear-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}

@@ -1,0 +1,12 @@
+.Layout {
+    
+}
+
+.opacity-appear {
+  opacity: 0;
+}
+
+.opacity-appear-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}

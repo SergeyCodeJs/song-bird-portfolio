@@ -1,0 +1,90 @@
+.wrapper {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    padding: 0 2%;
+    flex-direction: column;
+    background-color: black;
+    top: 49px;
+    left: 50%;
+    width: 463px;
+    height: 409px;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+}
+
+.win_text {
+    padding-top: 46px;
+    margin-bottom: 19px;
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 57px;
+    color: #000000;
+    text-align: center;
+}
+
+.current_score {
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #79BB90;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.end_game_text {
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    color: #79BB90;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.current_score__img {
+    display: block;
+    width: 383px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url('../../../../assets/images/win-stage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-align: center;
+}
+
+.win_img {
+    position: absolute;
+    bottom: -45px;
+    left: -120px;
+    display: block;
+    width: 200px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url('../../../../assets/images/win-bird.png');
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.loose_img {
+    display: block;
+    width: 200px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url('../../../../assets/images/bird-loose.png');
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
