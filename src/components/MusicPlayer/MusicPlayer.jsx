@@ -17,6 +17,7 @@ function MusicPlayer({
     useEffect(() => {
       const myRef = audioElement.current.audio.current;
       if(!isPlaying) {
+        console.log(myRef.children)
         myRef.pause()
       }
     }, [audioElement, isPlaying])
