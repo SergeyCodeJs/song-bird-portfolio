@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 0 15px 0 0;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.name {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+@media (max-width: 762px) {
+    .wrapper {
+        min-width: 130px;
+    }
+}

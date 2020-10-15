@@ -1,21 +1,23 @@
 import React from 'react'
 import {renderData} from '../../../utils/renderData'
+import getStageName from '../../../utils/getStageName'
 import StagesHeader from './StagesHeader/StagesHeader'
 import Stage from './Stage/Stage'
 import classes from './Stages.module.scss'
 
 export default function Stages() {
-  const data = ['Разные', 'Воробьи', 'Лесные', 'Певчие', 'Хищные', 'Морские'];
+    const {wrapper, inner_wrapper, stage_wrapper} = classes;
+    const data = getStageName();
 
-  const stagesData = renderData(data, Stage);
+    const stagesData = renderData(data, Stage);
 
     return (
-        <div className={classes.wrapper}>
-            <div className={classes.inner_wrapper}>
-              <StagesHeader/>
-              <div className={classes.stage_wrapper}>
-                {stagesData}
-              </div>
+        <div className={wrapper}>
+            <div className={inner_wrapper}>
+                <StagesHeader/>
+                <div className={stage_wrapper}>
+                    {stagesData}
+                </div>
             </div>
         </div>
     )

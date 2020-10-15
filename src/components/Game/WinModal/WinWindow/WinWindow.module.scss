@@ -88,3 +88,36 @@
     background-repeat: no-repeat;
     text-align: center;
 }
+
+@media (max-width: 763px) {
+  .wrapper {
+    top: 164px;
+}
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    width: 320px;
+}
+}
+
+
+@media (max-width: 484px) {
+  .wrapper {
+    top: 185px;
+}
+}
+
+
+@media (max-width: 452px) {
+  .wrapper {
+    top: 249px;
+    overflow: hidden;
+}
+}
+
+@media (max-width: 449px) {
+  .wrapper {
+    top: 279px;
+}
+}

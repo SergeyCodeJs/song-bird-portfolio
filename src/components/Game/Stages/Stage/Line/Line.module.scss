@@ -1,15 +1,19 @@
 .line {
-  background-color: #C4C4C4;
-  border-radius: 5px;
-  background-size: cover;
-  width: 100%;
-  height: 7px;
+    border-radius: 5px;
+    background-size: cover;
+    width: 100%;
+    height: 7px;
 }
 
 .gray {
-  background-color: #C4C4C4;
+    background-color: #C4C4C4;
 }
 
 .green {
-  background-color: rgb(121, 187, 144);
+    background-color: rgb(121, 187, 144);
+}
+@media (max-width: 768px) {
+    .line {
+        max-width: 100px;
+    }
 }

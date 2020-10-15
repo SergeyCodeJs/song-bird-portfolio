@@ -4,13 +4,13 @@ import {changeBirdType} from '../../../../../redux/actions/listenAllActions/acti
 import classes from './BirdType.module.scss'
 
 function BirdType(props) {
-    const {type, index, changeBirdType} = props;
-    const {listenAllBirdType} = props.listenAll
-    
-    const cls = [classes.button];
-    
+    const {button, button_active} = classes;
+    const {type, index, changeBirdType, listenAllBirdType} = props;
+
+    const cls = [button];
+
     if (listenAllBirdType === index) {
-        cls.push(classes.button_active);
+        cls.push(button_active);
     }
 
     return (
@@ -25,8 +25,8 @@ function BirdType(props) {
 }
 
 const mapStateToProps = ({game}) => {
-  const {listenAll} = game;
-  return {listenAll}
+    const {listenAllBirdType} = game.listenAll;
+    return {listenAllBirdType}
 }
 
 const mapDispatchToProps = {

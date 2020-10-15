@@ -1,50 +1,70 @@
 .wrapper {
-  position: relative;
+    position: relative;
 }
 
 .bird {
-  position: absolute;
-  background-image: url('../../assets/images/ill_bird__footer.png');
-  width: 439px;
-  height: 303px;
-  top: -95px;
-  background-repeat: no-repeat;
+    position: absolute;
+    background-image: url('../../assets/images/ill_bird__footer.png');
+    width: 439px;
+    height: 303px;
+    top: -95px;
+    background-repeat: no-repeat;
 }
 
 .button {
-  display: block;
-  width: 463px;
-  height: 50px;
-  margin: 0;
-  margin: 0 auto;
-  margin-top: 46px;
-  text-align: center;
-  color: white;
-  transition: all 0.5s;
-  font-family: 'SF UI Display';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-  background-color: #fff;
-  margin-bottom: 125px;
+    display: block;
+    width: 463px;
+    height: 50px;
+    margin: 46px auto 0;
+    text-align: center;
+    color: white;
+    transition: all 0.5s;
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    background-color: #fff;
+    margin-bottom: 125px;
 }
 
 .activated {
-  border: 3px solid #FFEF5D;
-  cursor: pointer;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #FFEF5D;
-    color: black;
     border: 3px solid #FFEF5D;
-  }
+    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+        background-color: #FFEF5D;
+        color: black;
+        border: 3px solid #FFEF5D;
+    }
 }
 
 .deactivated {
-  border: 3px solid #C4C4C4;
-  cursor: initial;
-  outline: none;
+    border: 3px solid #C4C4C4;
+    cursor: initial;
+    outline: none;
 }
+@media (max-width: 540px) {
+    .button {
+        width: 320px;
+    }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    .bird {
+        width: 200px;
+        height: 138px;
+        top: 55px;
+        background-size: contain;
+    }
+
+    .next-level-button {
+        margin-bottom: 60px;
+    }
+
+    .next-level-button--deactivated {
+        margin-bottom: 60px;
+    }
+
+}
+

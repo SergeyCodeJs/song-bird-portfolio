@@ -1,19 +1,64 @@
 .birds_player {
-  display: flex;
-  justify-content: space-between;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_wrapper {
+    display: flex;
 }
 
 .description_wrapper {
-  max-width: 576px;
-  font-family: 'SF UI Text';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-  color: #000000;
+    max-width: 576px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
 
-  p {
-      margin-bottom: 60px;
-      max-height: 48px;
-  }
+    p {
+        margin-bottom: 60px;
+        max-height: 48px;
+    }
+}
+@media (max-width: 1024px) {
+    .description_wrapper {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 14px;
+
+        p {
+            margin-bottom: 20px;
+            max-height: 48px;
+        }
+    }
+
+    .content_wrapper {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 750px) {
+    .birds_player {
+        flex-direction: column;
+    }
+
+    .description_wrapper {
+        font-size: 12px;
+        line-height: 14px;
+        p {
+          margin-bottom: 30px;
+      }
+    }
+}
+@media (max-width: 480px) {
+    .birds_player {
+        flex-direction: column;
+    }
+
+    .description_wrapper p {
+        margin-bottom: 50px;
+    }
 }

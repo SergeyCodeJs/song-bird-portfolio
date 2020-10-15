@@ -5,24 +5,32 @@ import QuestionPlayer from './QuestionPlayer/QuestionPlayer'
 import Score from './Score/Score'
 import WinModal from '../WinModal/WinModal'
 
-import BirdsList from '../../BirdsList/BirdsList'
+import GameBirdsList from './GameBirdsList/GameBirdsList'
 
 function Question({isGameStarted}) {
-  return (
-    <QuestionLayout>
-      <WinModal/>
-      <QuestionPlayer/>
-      {isGameStarted ? <BirdsList/> : null}
-      {isGameStarted ? <Score/> : null}
-    </QuestionLayout>
-  )
+    const BirdListElement = isGameStarted
+        ? <GameBirdsList/>
+        : null;
+    const ScoreElement = isGameStarted
+        ? <Score/>
+        : null;
+
+    return (
+        <QuestionLayout>
+            <WinModal/>
+            <QuestionPlayer/> 
+            {BirdListElement}
+            {ScoreElement}
+        </QuestionLayout>
+    )
 }
 
 function mapStateToProps({game}) {
-  const {gameLogic} = game;
-  const {isGameStarted} = gameLogic;
+    const {gameLogic: {
+            isGameStarted
+        }} = game;
 
-  return {isGameStarted}
+    return {isGameStarted}
 }
 
 export default connect(mapStateToProps, null)(Question)

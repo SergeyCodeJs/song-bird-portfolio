@@ -10,3 +10,9 @@
 .green {
     color: rgb(121, 187, 144);
 }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .number {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

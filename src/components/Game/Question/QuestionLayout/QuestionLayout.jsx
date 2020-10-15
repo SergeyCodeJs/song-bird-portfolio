@@ -2,9 +2,11 @@ import React from 'react'
 import classes from './QuestionLayout.module.scss'
 
 export default function QuestionLayout(props) {
+    const {question, question_wrapper} = classes;
+
     return (
-        <div className={classes.question}>
-            <div className={classes.question_wrapper}>
+        <div className={question}>
+            <div className={question_wrapper}>
                 {props.children}
             </div>
         </div>

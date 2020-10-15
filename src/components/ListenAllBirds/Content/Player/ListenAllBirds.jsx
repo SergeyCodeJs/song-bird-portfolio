@@ -1,23 +1,28 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import BirdsList from '../../../BirdsList/BirdsList'
+import ListenAllBirdsList from './ListenAllBirdsList/ListenAllBirdsList'
 import BirdsDescription from './BirdsDescription/BirdsDescription'
 import MusicPlayer from '../../../MusicPlayer/MusicPlayer'
 import BirdsImage from './BirdsImage/BirdsImage'
 
 import classes from './ListenAllBirds.module.scss'
 
-
-function ListenAllBirds(props) {
-    const {listenAllBirdType, data, currentBirdIndex} = props;
+function ListenAllBirds({data, listenAllBirdType, currentBirdIndex}) {
+    const {birds_player, content_wrapper, description_wrapper} = classes;
     const src = data[listenAllBirdType][currentBirdIndex].audio;
 
     return (
-        <div className={classes.birds_player}>
-            <BirdsList listType="listenAll"/>
-            <div className={classes.description_wrapper}>
-                <BirdsDescription/>
-                <MusicPlayer src={src} autoPlay={false} loop={false} autoPlayAfterSrcChange={true}/>
+        <div className={birds_player}>
+            <div className={content_wrapper}>
+                <ListenAllBirdsList/>
+                <div className={description_wrapper}>
+                    <BirdsDescription/>
+                    <MusicPlayer
+                        src={src}
+                        autoPlay={false}
+                        loop={false}
+                        autoPlayAfterSrcChange={true}/>
+                </div>
             </div>
             <BirdsImage/>
         </div>
@@ -25,11 +30,15 @@ function ListenAllBirds(props) {
 }
 
 function mapStateToProps({game, birdsData}) {
-    const {listenAll} = game;
     const {data} = birdsData;
-    const {listenAllBirdType, currentBirdIndex} = listenAll;
-    return {data,listenAllBirdType,currentBirdIndex}
+    const {
+        listenAll: {
+            listenAllBirdType,
+            currentBirdIndex
+        }
+    } = game;
+
+    return {data, listenAllBirdType, currentBirdIndex}
 }
 
 export default connect(mapStateToProps, null)(ListenAllBirds)
-

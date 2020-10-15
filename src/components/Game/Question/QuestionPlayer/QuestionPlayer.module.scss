@@ -1,6 +1,6 @@
-
 .wrapper {
     max-width: 549px;
+    min-width: 400px;
     position: relative;
 
     h3 {
@@ -32,4 +32,22 @@
     top: 106px;
     left:-2px;
     opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+       min-width: 270px;
+    }
+}
+
+@media (max-width: 483px) {
+    .bg_gray {
+        height: 120px;
+    }
+}
+
+@media (max-width: 483px) {
+    .wrapper {
+        margin-bottom: 20px;
+    }
 }

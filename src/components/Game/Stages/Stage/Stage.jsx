@@ -8,15 +8,15 @@ import Circle from './Circle/Circle'
 import classes from './Stage.module.scss'
 
 function Stage({gameStage, index, content}) {
-    
+    const {wrapper, number_wrapper, step_wrapper} = classes;
 
     return (
-        <div className={classes.wrapper} key={index}>
-            <div className={classes.number_wrapper}>
+        <div className={wrapper} key={index}>
+            <div className={number_wrapper}>
                 <Number gameStage={gameStage} index={index}/>
                 <Text index={index} gameStage={gameStage} text={content}/>
             </div>
-            <div className={classes.step_wrapper}>
+            <div className={step_wrapper}>
                 <Circle index={index} gameStage={gameStage}/>
                 <Line index={index} gameStage={gameStage}/>
             </div>

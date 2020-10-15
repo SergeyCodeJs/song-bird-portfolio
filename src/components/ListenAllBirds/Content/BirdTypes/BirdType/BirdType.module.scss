@@ -1,34 +1,63 @@
-.birds_stages {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
-}
-
 .button {
-  background: #FFFFFF;
-  width: 180px;
-  height: 40px;
-  margin-right: 9px;
-  border: 0.5px solid rgba(196, 196, 196, 0.2);
-  box-sizing: border-box;
+    background: #FFFFFF;
+    width: 180px;
+    height: 40px;
+    margin-right: 9px;
+    border: 0.5px solid rgba(196, 196, 196, 0.2);
+    box-sizing: border-box;
+    &:hover {
+        box-shadow: 3px 5px 4px rgba(196, 196, 196, 0.5);
+        cursor: pointer;
+    }
 
-  &:hover {
-    box-shadow: 3px 5px 4px rgba(196, 196, 196, 0.5); 
-    cursor: pointer;
-  }
-
-  p {
-    font-family: 'SF UI Text';
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 38px;
-  }
+    p {
+        font-family: 'SF UI Text';
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 38px;
+    }
 }
 
 .button_active {
-  box-shadow: 3px 5px 4px rgba(196, 196, 196, 0.5); 
-  cursor: pointer;
+    box-shadow: 3px 5px 4px rgba(196, 196, 196, 0.5);
+    cursor: pointer;
+}
+@media (max-width: 1430px) {
+    .button {
+        width: 120px;
+    }
+}
+@media (max-width: 933px) {
+    .button {
+        width: 100px;
+    }
+}
+@media (max-width: 790px) {
+    .button {
+        width: 80px;
+    }
+}
+@media (max-width: 650px) {
+    .button {
+        width: 70px;
+    }
+}
+@media (max-width: 571px) {
+    .button {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .button {
+        width: 49.53px;
+        height: 30px;
+        margin-right: 2px;
+
+        p {
+            font-size: 10px;
+            line-height: 26px;
+        }
+    }
 }

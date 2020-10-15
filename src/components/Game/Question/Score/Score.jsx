@@ -1,24 +1,23 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {CSSTransition} from 'react-transition-group'
+import getWormsNumber from '../../../../utils/getWormsNumber'
 import Worm from './Worm/Worm'
 import getArrayWithElements from '../../../../utils/getArrayWithElements'
 import getWormName from '../../../../utils/getWormName'
 import './Score.scss'
 
 function Score({totalScore, worms}) {
-    const cls = ["score-wrapper"];
-
-    let wormsCopy = worms;
-    wormsCopy = wormsCopy >= 0
-        ? wormsCopy
-        : 0;
-    const wormsArray = getArrayWithElements(wormsCopy, Worm);
+    const wormsArray = getArrayWithElements(getWormsNumber(worms), Worm);
 
     return (
-        <CSSTransition appear={true} in={true} timeout={300} classNames="score-opacity">
-            <div className={cls.join(' ')}>
-                <p className="score-worms">{`Общий счет: ${totalScore} ${getWormName(totalScore)}`}</p>
+        <CSSTransition 
+        appear={true} 
+        in={true} 
+        timeout={300} 
+        classNames="score-opacity">
+            <div className="score_wrapper">
+                <p className="score_worms">{`Общий счет: ${totalScore} ${getWormName(totalScore)}`}</p>
                 <div>
                     {wormsArray}
                 </div>

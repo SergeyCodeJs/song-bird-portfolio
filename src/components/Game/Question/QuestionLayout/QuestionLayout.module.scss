@@ -1,6 +1,6 @@
 .question {
-  background-color: #F3F3F3;
-  position: relative;
+    background-color: #F3F3F3;
+    position: relative;
 }
 
 .question_wrapper {
@@ -9,4 +9,14 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
+}
+@media (max-width: 778px) {
+    .question_wrapper {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 452px) {
+  .question_wrapper {
+        justify-content: center;
+    }
 }

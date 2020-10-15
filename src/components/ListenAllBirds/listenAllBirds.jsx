@@ -4,20 +4,24 @@ import ShowAllBirdsButton from './ShowAllBirdsButton/ShowAllButton'
 import CommonLayout from './CommonLayout/CommonLayout'
 import Content from './Content/Content'
 
-function ListenAllBirds({listenAll}) {
-    const {isInterfaceOpen} = listenAll;
+function ListenAllBirds({isInterfaceOpen}) {
+    const ListenAllContent = isInterfaceOpen
+        ? <Content/>
+        : null;
+
     return (
         <CommonLayout>
-            <ShowAllBirdsButton/> {isInterfaceOpen
-                ? <Content/>
-                : null}
+            <ShowAllBirdsButton/> 
+            {ListenAllContent}
         </CommonLayout>
     )
 }
 
 const mapStateToProps = ({game}) => {
-    const {listenAll} = game;
-    return {listenAll}
+    const {listenAll: {
+            isInterfaceOpen
+        }} = game;
+    return {isInterfaceOpen}
 };
 
 export default connect(mapStateToProps, null)(ListenAllBirds)

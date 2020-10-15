@@ -2,14 +2,17 @@ import React from 'react'
 import classes from './Number.module.scss'
 
 export default function Number({index, gameStage}) {
-    const cls = [classes.number];
+    const {number, green} = classes;
+    const cls = [number];
+    const stageNumber = index + 1;
+
     if (gameStage >= index) {
-        cls.push(classes.green);
+        cls.push(green);
     }
 
     return (
         <div className={cls.join(' ')}>
-            {index + 1}
+            {stageNumber}
         </div>
     )
 }

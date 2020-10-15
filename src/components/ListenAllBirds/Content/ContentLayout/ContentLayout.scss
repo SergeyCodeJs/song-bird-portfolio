@@ -1,23 +1,39 @@
 .content-layout-wrapper {
-  margin-bottom: 69px;
-  height: 298px;
+    margin-bottom: 69px;
 }
 
 .birds-list-opacity-appear {
-  opacity: 0;
+    opacity: 0;
 }
 
 .birds-list-opacity-appear-active {
-  opacity: 1;
-  transition: opacity .3s ease-in;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
 }
 
-
 .birds-list-opacity-exit {
-  opacity: 1;
+    opacity: 1;
 }
 
 .birds-list-opacity-exit-active {
-  opacity: 1;
-  transition: opacity .3s ease-in;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+@media only screen and (min-width: 376px) and (max-width: 1024px) {
+    .content-layout-wrapper {
+        margin-bottom: 48px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .content-layout-wrapper {
+        margin-bottom: 48px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .content-layout-wrapper {
+        height: auto;
+        margin-bottom: 29px;
+    }
 }

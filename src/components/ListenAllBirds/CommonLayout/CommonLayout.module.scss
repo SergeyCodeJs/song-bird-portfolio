@@ -1,18 +1,33 @@
 .wrapper {
-  max-width: 80%;
-  margin: 0 auto;
-
-  h2 {
-    display: block;
-    position: relative;
-    font-family: 'SF UI Text';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 45px;
-    color: #000000;
-    text-align: center;
+    max-width: 80%;
     margin: 0 auto;
-    white-space: nowrap;
-  }
+
+    h2 {
+        display: block;
+        position: relative;
+        font-family: 'SF UI Text';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 45px;
+        color: #000000;
+        text-align: center;
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 1024px) {
+    .wrapper {
+        max-width: 83%;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .wrapper {
+        max-width: 83%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        max-width: 83%;
+    }
 }

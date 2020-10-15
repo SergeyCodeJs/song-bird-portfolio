@@ -11,7 +11,9 @@ function NextRound({
     isGameStarted,
     isPlaying
 }) {
-    const buttonCls = [classes.button];
+    const {button, deactivated, activated, wrapper, bird} = classes;
+
+    const buttonCls = [button];
     let buttonText,
         onClickFunction;
 
@@ -22,12 +24,12 @@ function NextRound({
     if (isPlaying && isGameStarted) {
         onClickFunction = () => {};
         buttonText = 'Выберите правильный вариант...';
-        buttonCls.push(classes.deactivated)
+        buttonCls.push(deactivated)
     } else if (!isPlaying && !isGameStarted) {
         onClickFunction = () => {};
         buttonText = 'Нажми на плеер чтобы начать';
     } else {
-        buttonCls.push(classes.activated);
+        buttonCls.push(activated);
         onClickFunction = goToNextRound;
         buttonText = 'Следующий раунд';
     }
@@ -38,8 +40,8 @@ function NextRound({
     }
 
     return (
-        <div className={classes.wrapper}>
-            <div className={classes.bird}/>
+        <div className={wrapper}>
+            <div className={bird}/>
             <button
                 type="button"
                 id="button"

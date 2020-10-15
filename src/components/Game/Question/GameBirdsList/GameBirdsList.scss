@@ -1,0 +1,26 @@
+.game-birds-list-container {
+  margin-bottom: 33px;
+  min-width: 132px;
+  transition: all .3s ease-in; 
+}
+
+.birds-list-opacity-appear {
+  opacity: 0;
+}
+
+.birds-list-opacity-appear-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+
+@media (max-width: 762px) {
+  .game-birds-list-container {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 360px;
+    margin-top: 40px;
+  }
+}

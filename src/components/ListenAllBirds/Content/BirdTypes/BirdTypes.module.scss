@@ -1,6 +1,17 @@
-.birds_stages {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
+.birds_types {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+@media (max-width: 571px) {
+    .birds_types {
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .birds-types {
+        margin-bottom: 33px;
+    }
 }

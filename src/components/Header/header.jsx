@@ -2,9 +2,12 @@ import React from 'react';
 import classes from './header.module.scss'
 
 function Header() {
+    const {header, h1} = classes;
+    const headerText = `Узнайте птицу по ее пению`;
+    
     return (
-        <div className={classes.header}>
-            <h1 className={classes.h1}>Узнайте птицу по ее пению</h1>
+        <div className={header}>
+            <h1 className={h1}>{headerText}</h1>
         </div>
     );
 }

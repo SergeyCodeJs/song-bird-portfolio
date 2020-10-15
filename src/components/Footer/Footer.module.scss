@@ -28,3 +28,39 @@
     }
   }
 }
+
+
+@media (min-width: 376px)
+and (max-width: 1024px) {
+  .inner-wrapper p:last-child {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+  .inner-wrapper p:last-child {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (min-width: 320px)
+and (max-width: 480px) { 
+  .inner-wrapper {
+    width: 93.5%;
+  }
+
+  .produced p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .thanks p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
