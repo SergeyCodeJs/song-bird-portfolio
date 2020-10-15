@@ -8,7 +8,7 @@ const initialState = {
         isGameStarted: false,
         isGameFinished: false,
         isPlaying: false,
-        gameStage: 1,
+        gameStage: 0,
         gameBirdSelected: null,
         wormsNumber: 5,
         showWinMessage: false
