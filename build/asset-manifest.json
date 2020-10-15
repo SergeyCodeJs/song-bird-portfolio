@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9d8e6ca.chunk.css",
+    "main.css": "/static/css/main.4d26b45d.chunk.css",
     "main.js": "/static/js/main.69632634.chunk.js",
     "main.js.map": "/static/js/main.69632634.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3fd985ff.js",
@@ -9,10 +9,10 @@
     "static/js/2.6dd3c145.chunk.js": "/static/js/2.6dd3c145.chunk.js",
     "static/js/2.6dd3c145.chunk.js.map": "/static/js/2.6dd3c145.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.07eeab6e25b411b0e0ae78a7f59de96f.js": "/precache-manifest.07eeab6e25b411b0e0ae78a7f59de96f.js",
+    "precache-manifest.f692a075d1439bcd21dee6c745e60ee5.js": "/precache-manifest.f692a075d1439bcd21dee6c745e60ee5.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.e3f36e05.chunk.css.map": "/static/css/2.e3f36e05.chunk.css.map",
-    "static/css/main.a9d8e6ca.chunk.css.map": "/static/css/main.a9d8e6ca.chunk.css.map",
+    "static/css/main.4d26b45d.chunk.css.map": "/static/css/main.4d26b45d.chunk.css.map",
     "static/js/2.6dd3c145.chunk.js.LICENSE.txt": "/static/js/2.6dd3c145.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/static/media/sf-ui-display-heavy-586470160b9e5.a06f68e8.woff",
     "static/media/NextRoundButton.module.scss": "/static/media/ill_bird__footer.f9924254.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.3fd985ff.js",
     "static/css/2.e3f36e05.chunk.css",
     "static/js/2.6dd3c145.chunk.js",
-    "static/css/main.a9d8e6ca.chunk.css",
+    "static/css/main.4d26b45d.chunk.css",
     "static/js/main.69632634.chunk.js"
   ]
 }
