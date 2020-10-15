@@ -1,4 +1,6 @@
 .wrapper {
+	position: relative;
+	right: 9%;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -1158,5 +1160,11 @@
 	}
 	100% {
 		margin-left: 187px;
+	}
+}
+
+@media (max-width: 480px) {
+	.wrapper {
+		right: 20%;
 	}
 }
